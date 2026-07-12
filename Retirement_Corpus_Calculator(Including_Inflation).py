@@ -12,7 +12,8 @@ if i==1:
       else:
          for k in range(1,t+1):
             p=p+p*0.12
-            p=p+(f+f*s/100)*12
+            p=f*12+(f+f*s/100)*12
+         print("Amount invested is: ",f*12*t)
          print("Retirement corpus after ",t," years is: ",p)
          print("Current value of retirement corpus is: ",p/(1+0.04)**t)
    
@@ -27,6 +28,7 @@ if i==1:
          for k in range(t):
             p=(p)+(p)*r/100
             p=p+(f+p *s/100)*12
+         print("Amount invested is: ",f*12*t)
          print("Retirement corpus after ",t," years is: ",p)
          print("Current value of retirement corpus is: ",p/(1+0.04)**t)
 
@@ -50,5 +52,6 @@ elif i==2:
       for k in range(t):
          p=(p)+(p)*r/100
          p=p+(f+p*s/100)*12
+      print("Amount invested is: ",f*12*t)
       print("Total Money after ",t," years is: ",p)
       print("Current value of the money is: ",p/(1+0.04)**t)  
