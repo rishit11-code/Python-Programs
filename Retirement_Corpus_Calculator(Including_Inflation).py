@@ -14,7 +14,7 @@ if i==1:
             p=p+p*0.12
             p=p+(f+f*s/100)*12
          print("Retirement corpus after ",t," years is: ",p)
-         print("Current value of retirement corpus is: ",p-p*0.04)
+         print("Current value of retirement corpus is: ",p/(1+0.04)**t)
    
    elif j==2:
       f=int(input("Enter Monthly Deduction: "))
@@ -28,7 +28,7 @@ if i==1:
             p=(p)+(p)*r/100
             p=p+(f+p *s/100)*12
          print("Retirement corpus after ",t," years is: ",p)
-         print("Current value of retirement corpus is: ",p-p*0.04)
+         print("Current value of retirement corpus is: ",p/(1+0.04)**t)
 
 elif i==3:
    f=int(input("Amount in FD: "))
@@ -37,7 +37,7 @@ elif i==3:
    for k in range(t):
       f=f+f*r/100
    print("Retirement corpus after ",t," years is: ",f)
-   print("Current value of retirement corpus is: ",f-f*0.04)
+   print("Current value of retirement corpus is: ",f/(1+0.04)**t)
 elif i==2:
    f=int(input("Enter Monthly Deduction: "))
    t=int(input("Enter the time period in years (Less than 12 years): "))
@@ -51,4 +51,4 @@ elif i==2:
          p=(p)+(p)*r/100
          p=p+(f+p*s/100)*12
       print("Total Money after ",t," years is: ",p)
-      print("Current value of the money is: ",p-p*0.04)  
+      print("Current value of the money is: ",p/(1+0.04)**t)  
